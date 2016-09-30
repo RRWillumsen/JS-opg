@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Andet JavaScript</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<link href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/flatly/bootstrap.min.css" type="text/css" rel="stylesheet" />
+	<link href="assets/css/styles2.css" type="text/css" rel="stylesheet" />
+	
+	
+
+</head>
+<body>
+<header>
+<ul class="topnav" id="myTopnav">
+  <li><a href="index.html">Google Maps</a></li>
+  <li><a href="andet.html">Andet js</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction2()">&#9776;</a>
+  </li>
+</ul>
+
+</header>
+ <script type="text/javascript">
+  writeRandomQuote = function () {
+    var quotes = new Array();
+    quotes[0] = "Action is the real measure of intelligence.";
+    quotes[1] = "Baseball has the great advantage over cricket of being sooner ended.";
+    quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one’s level of peace of mind.";
+    quotes[3] = "A good head and a good heart are always a formidable combination.";
+    var rand = Math.floor(Math.random()*quotes.length);
+    document.write(quotes[rand]);
+  }
+  writeRandomQuote();
+</script>
+
+<script>
+function myFunction1() {
+    var x = document.getElementById("demo");
+    x.style.fontSize = "25px"; 
+    x.style.color = "red"; 
+}
+</script>
+<!-- The App will be rendered here -->
+
+ <div class="appt">
+	<form id="f">
+		Change url =: <input type="text" name="txt">
+		<input type="submit" value="Change url" onclick="bgChange(); return false;">
+	</form>
+
+
+	</br>
+	</br>
+
+	<!-- Grunden til at det ikke virker er at function er har samme navngivning som Click Disable -->
+		<button onclick="myFunctionS()">Click me</button>
+		<script type="text/javascript">writeRandomQuote();</script>
+
+	</br>
+	</br>
+	</br>
+	
+		<p>Click to disable the BUTTON element:</p>
+		<button type="button" id="myBtn" onclick="myFunctionS()">Try it</button>
+	
+	</br>
+	</br>
+	</br>
+	
+	<p id="demo">Click the button to change the layout of this paragraph</p>
+<button onclick="myFunction1()">Click Me!</button>
+	
+	</div>
+
+	
+	<!-- Our compiled JavaScript source file -->
+	<script src="./compiled.js"></script>
+
+</body>
+</html>

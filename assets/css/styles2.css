@@ -1,0 +1,164 @@
+body{
+background-color:#f2f2f2;
+}
+
+.appt{
+	margin-top:100px;
+margin-left:400px;
+	
+}
+#quote
+{
+width: 200px;
+margin-top:100px;
+margin-left:400px;
+}
+h1 {
+	margin-bottom: 20px;
+}
+
+body > div {
+  width: 10%;
+  float: left;
+}
+
+body > div > div {
+  height: 50px;  
+}
+
+.input-group {
+	margin-left: 4%;
+}
+
+.glyphicon {
+	font-size: 18px;
+	z-index: 20;
+	cursor: pointer;
+}
+
+.glyphicon-search{
+	position: relative;
+	right: 30px;
+}
+
+.current-location {
+	margin-top: 30px;
+}
+
+.glyphicon-menu-right {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	margin-top: -9px;
+}
+
+.map-holder {
+	max-width: 500px;
+	height: 350px;
+	margin: 0 auto;
+	background-color: #FCFCFC;
+	position: relative;
+	border-radius: 2px;
+}
+
+#anden
+{
+margin-left: 400px;
+}
+
+#map {
+	max-width: 500px;
+	height: 350px;
+	margin: 0 auto;
+}
+
+.list-group {
+	padding: 0 15px;
+	margin-top: 50px;
+}
+
+.list-group-item {
+	position: relative;
+	padding: 10px 20px;
+}
+
+a.list-group-item {
+	cursor: pointer;
+}
+
+a.list-group-item:hover {
+	background-color: #F7FBFF;
+}
+
+a.active-location {
+	background-color: #EEF6FF;
+}
+
+a.active-location:hover {
+	background-color: #EBF3FC;
+}
+
+a.list-group-item span.createdAt {
+	display: block;
+	color: #969FA8;
+	z-index: -1;
+}
+
+#add-element {
+  cursor: pointer;
+}
+/*nav style*/
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
